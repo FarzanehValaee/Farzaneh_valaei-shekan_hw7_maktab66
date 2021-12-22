@@ -1,0 +1,154 @@
+*{
+   padding: 0;
+   margin: 0;
+}
+body{
+   background-color: black;
+}
+#Wrapper{
+   color: white;
+}
+.Profile{
+   display: flex;
+   justify-content: center;
+
+}
+.Avatar img{
+   margin:  auto;
+  border-radius: 50%;
+
+}
+.Footer{
+   padding: 2% 0;
+}
+.Footer>h3,p{
+   display: flex;
+   justify-content: center;
+}
+.Footer>p{
+   padding-bottom: 1.5%;
+}
+.gradient-text {
+   color: red;
+}
+.Avatar{
+   padding-bottom: 12%;
+}
+.Content{
+   border-bottom: 1px solid;
+   border-image: linear-gradient(to left, rgb(217, 70, 239), rgb(220, 38, 38), rgb(251, 146, 60)) 1;
+}
+
+.Boxes{
+   margin-left: 3%;
+   margin-right: 7%;
+}
+/* gradient text for modern browsers */
+ @supports (background-clip: text) {
+   .gradient-text {
+     background-image: linear-gradient(to left, rgb(217, 70, 239), rgb(251, 146, 60));
+     background-clip: text;
+     color: transparent;
+   }
+ }
+/* responsive */
+/* labtop mode */
+@media screen {
+   .Content{
+      margin:10% 5%;
+   }
+   .Avatar{
+      display: flex;
+   }
+   .Avatar img{
+      width: 80%;
+   }
+   .Boxes{
+      display: flex;
+      justify-content: space-between;
+
+   } 
+   .box{
+      margin: 0 2%;
+   }
+   .responsiveBox{
+      display: contents;
+   }
+}
+/* tablet mode */
+@media screen and (max-width:992px){
+   .Content{
+      padding:5% 1%;
+   }
+   .Avatar {
+      padding:5% 1%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     }
+   .Profile{
+      display: contents;
+      width: 60%;
+   }
+   .Boxes{
+      display: block;
+      margin-bottom: 4%;
+   }
+   .Boxes>.box{
+      width: 50%;
+      margin: 0 2%;
+   }
+   .responsiveBox{
+      display: flex;
+      justify-content: space-between;
+   }
+   .responsiveBox .box{
+      margin: 0 2%;
+   }
+   .Avatar img{
+      width: 10%;
+   }
+   .Footer{
+      border-bottom: 1px solid;
+      border-image: linear-gradient(to left, rgb(217, 70, 239), rgb(220, 38, 38), rgb(251, 146, 60)) 1;
+      margin-bottom: 3%;
+
+   }
+}
+/* mobile mode */
+@media screen and (max-width:576px){
+   .Profile{
+      display: contents;
+      width: 60%;
+   }
+   .Bio{
+      display: contents;
+   }
+   .Avatar {
+    padding:5% 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .responsiveBox{
+      display: contents;
+   }
+   .box{
+      width: 100%;
+   }
+   .Boxes{
+      display: flex;
+      flex-direction: column;
+   }
+   .Footer{
+      border-bottom: 1px solid;
+      border-image: linear-gradient(to left, rgb(217, 70, 239), rgb(220, 38, 38), rgb(251, 146, 60)) 1;
+      margin-bottom: 3%;
+
+   } 
+}
+
+
+
